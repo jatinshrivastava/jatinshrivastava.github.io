@@ -55,3 +55,128 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
+
+//bar
+var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+    type: 'bar',
+    data: {
+        labels: ["C", "Python", "Java", "C++", "Obj C"],
+        datasets: [{
+            label: 'Skill Level',
+            data: [9, 7, 6, 8, 5],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend: {
+            display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 10,
+                    min: 0,
+                    stepSize: 1,
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+
+
+
+//line
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+    type: 'line',
+    data: {
+        labels: ["HTML", "CSS", "JavaScript", "Django", "Bootstrap", ],
+        datasets: [{
+                label: "Skill Level",
+                data: [9, 8, 6, 8, 7],
+                backgroundColor: [
+                    'rgba(105, 0, 132, .2)',
+                ],
+                borderColor: [
+                    'rgba(200, 99, 132, .7)',
+                ],
+                borderWidth: 2
+            },
+
+        ]
+    },
+    options: {
+        legend: {
+            display: false,
+        },
+        responsive: true,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 10,
+                    min: 0,
+                    stepSize: 1,
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+
+});
+//radar
+var ctxR = document.getElementById("radarChart").getContext('2d');
+var myRadarChart = new Chart(ctxR, {
+    type: 'radar',
+    data: {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [{
+                label: "My First dataset",
+                data: [65, 59, 90, 81, 56, 55, 40],
+                backgroundColor: [
+                    'rgba(105, 0, 132, .2)',
+                ],
+                borderColor: [
+                    'rgba(200, 99, 132, .7)',
+                ],
+                borderWidth: 2
+            },
+
+        ]
+    },
+    options: {
+        legend: {
+            display: false,
+        },
+        responsive: true
+    }
+});
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+    document.querySelectorAll('*'),
+    function(el) {
+        if (el.offsetWidth > docWidth) {
+            console.log(el);
+        }
+    }
+);
