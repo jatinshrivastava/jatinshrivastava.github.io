@@ -161,10 +161,10 @@ var ctxR = document.getElementById("radarChart").getContext('2d');
 var myRadarChart = new Chart(ctxR, {
     type: 'radar',
     data: {
-        labels: ["Computer Networks", "Adobe Photoshop", "Playing Guitar", "Ethical Hacking", "MS Excel", "Singing", "Designing"],
+        labels: ["Problem Solving", "Creativity", "Analytical Thinking", "Teamwork", "Communication", "Organized", "Agile"],
         datasets: [{
                 label: "My First dataset",
-                data: [70, 59, 80, 65, 85, 80, 68],
+                data: [95, 100, 85, 90, 92, 94, 90],
                 backgroundColor: [
                     'rgba(105, 0, 132, .2)',
                 ],
@@ -182,7 +182,10 @@ var myRadarChart = new Chart(ctxR, {
                fontColor:"#93a2c2",
             },
             ticks: {
-                display: false
+                display: false,
+                max: 100,
+        min: 80,
+        stepSize: 5
               }
         },
         legend: {
