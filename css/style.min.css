@@ -566,12 +566,12 @@ html {
 
 .skills-div {
     width: 100vw;
-    background: rgba(61, 76, 107, 0.781);
+    background: rgba(61, 76, 107, 0.8);
     padding: 1em;
 }
 
 .skills-div:hover {
-    background: rgba(0, 255, 106, 0.692);
+    background: rgba(61, 76, 107, 0.5);
     transition-delay: 0.1s;
 }
 
