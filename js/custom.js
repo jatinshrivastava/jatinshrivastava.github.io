@@ -161,10 +161,10 @@ var ctxR = document.getElementById("radarChart").getContext('2d');
 var myRadarChart = new Chart(ctxR, {
     type: 'radar',
     data: {
-        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        labels: ["Computer Networks", "Adobe Photoshop", "Playing Guitar", "Ethical Hacking", "MS Excel", "Singing", "Designing"],
         datasets: [{
                 label: "My First dataset",
-                data: [65, 59, 90, 81, 56, 55, 40],
+                data: [70, 59, 80, 65, 85, 80, 68],
                 backgroundColor: [
                     'rgba(105, 0, 132, .2)',
                 ],
