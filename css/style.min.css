@@ -604,6 +604,21 @@ html {
     overflow: hidden;
 }
 
+.contact-card {
+    background: #1C2331;
+    transition-delay: 0.1s;
+}
+
+.contact-button-submit {
+    border-radius: 120px;
+}
+
+.contact-button-submit:hover {
+    color: grey !important;
+    border-color: grey !important;
+    transition: all 0.25s ease-in-out;
+}
+
 
 /*Projects.html styles*/
 

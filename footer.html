@@ -1,4 +1,4 @@
-<footer class="page-footer footer text-center font-small fixed-bottom wow fadeIn">
+<footer class="page-footer footer text-center font-small wow fadeIn" id="footer">
     <div class="footer-row row">
       <div class="col-lg-6 col-md-12 pt-4 pb-4 d-flex justify-content-center">
         <a href="mailto:jatin_shrivastava@outlook.com">
@@ -41,3 +41,16 @@
     </div>
     <!--/.Copyright-->
   </footer>
+  <script>
+    "use strict";
+     $(document).ready(function(){
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        if (page == "contact.html" || page == "coming-soon.html") {
+          var footerElement = document.getElementById("footer");
+        console.log("hiii jatin page is " + path);
+        footerElement.classList.add("fixed-bottom");
+          console.log("yoyoyo " + footerElement.innerHTML);
+        }
+      });
+</script>

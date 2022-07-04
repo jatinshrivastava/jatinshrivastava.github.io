@@ -60,7 +60,7 @@
       <div data-draggable="true" style="position: relative;">
         <!---->
         <!---->
-        <section draggable="false" class="container pt-5 mt-5" data-v-271253ee="">
+        <section draggable="false" class="container pt-5 mt-4" data-v-271253ee="">
           <section class="mb-5">
             <style>
               /* Map settings */
@@ -91,7 +91,7 @@
               }
             </style>
             <style class="darkreader darkreader--sync" media="screen"></style>
-            <div class="card mb-3">
+            <div class="card mb-3 mt-4 contact-card">
               <div class="row g-0 d-flex align-items-center">
                 <div class="col-lg-4 d-none d-lg-flex">
                   <div class="map-container-2 w-100 mb-4 mb-lg-0"> <iframe
@@ -100,7 +100,7 @@
                   </div>
                 </div>
                 <div class="col-lg-8">
-                  <div class="card-body py-5 px-md-5">
+                  <div class="card-body py-0 px-md-5">
                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrgjwbzq" method="post">
                       <fieldset id="fs-frm-inputs">
                         <label for="full-name">Full Name</label>
@@ -111,7 +111,7 @@
                         <textarea rows="5" name="message" id="message" placeholder="Your message here" required=""></textarea>
                         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                       </fieldset>
-                      <input type="submit" value="Submit">
+                      <button type="submit" class="btn border border-light contact-button-submit" value="Submit">Submit</button>
                     </form><style>/* reset */
                     #fs-frm input,
                     #fs-frm select,
@@ -149,6 +149,7 @@
                     #fs-frm #card-element {
                       border: 1px solid rgba(0,0,0,0.2);
                       background-color: rgba(255,255,255,0.9);
+                      color: black;
                       padding: .75em 1rem;
                       margin-bottom: 1.5rem;
                     }
