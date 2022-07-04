@@ -26,73 +26,8 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand logo" href="#"> </a>
-
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link nav-elements" href="/index.html">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                        </li>
-                        <li class="nav-item  active">
-                            <a class="nav-link nav-elements" href="./projects.html">Projects</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link nav-elements"
-                        href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                        target="_blank"
-                        >More</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link nav-elements"
-                        href="https://mdbootstrap.com/education/bootstrap/"
-                        target="_blank"
-                        >Others</a
-                      >
-                    </li>
-                  </ul>
-        
-                  <!-- Right -->
-                  <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                      <a
-                        href="https://www.facebook.com/jatin.srivastav.31"
-                        class="nav-link facebook-light-hover"
-                        target="_blank"
-                      >
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com/jatin__808" class="nav-link twitter-light-hover" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/jatinshrivastava" class="nav-link github-light-hover border border-light rounded waves-effect waves-light" target="_blank">
-                                <i class="fab fa-github mr-2"></i>My GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
+    <div id="nav-placeholder"></div>
+    <!-- Navbar -->
 
     </header>
     <!--Main Navigation-->
@@ -306,49 +241,7 @@
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="page-footer footer text-center font-small wow fadeIn ">
-        <div class="footer-row row ">
-            <div class="col-lg-6 col-md-12 pt-4 pb-4 d-flex justify-content-center ">
-                <a href="mailto:jatin_shrivastava@outlook.com ">
-                    <p class="h3 text-center contact-me ">Contact Me</p>
-                </a>
-            </div>
-            <!--Call to action-->
-            <div class="col-lg-6 col-md-12 pt-4 pb-4 ">
-                <a href="# " target="_blank ">
-                    <i class="fab fa-facebook-f facebook-light-hover mr-3 fa-2x "></i>
-                </a>
-
-                <a href="# " target="_blank ">
-                    <i class="fab fa-twitter twitter-light-hover mr-3 fa-2x "></i>
-                </a>
-
-                <a href="# " target="_blank ">
-                    <i class="fab fa-instagram instagram-light-hover mr-3 fa-2x "></i>
-                </a>
-
-                <a href="# " target="_blank ">
-                    <i class="fab fa-linkedin-in linkedin-light-hover mr-3 fa-2x "></i>
-                </a>
-
-                <a href="# " target="_blank ">
-                    <i class="fab fa-youtube youtube-light-hover mr-3 fa-2x "></i>
-                </a>
-
-                <a href="# " target="_blank ">
-                    <i class="fab fa-github github-light-hover mr-3 fa-2x "></i>
-                </a>
-            </div>
-            <!-- Social icons -->
-        </div>
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3 ">
-            Designed and built by me |
-            <a href="# "> © 20-w/e Copyright</a>
-        </div>
-        <!--/.Copyright-->
-    </footer>
+    <div id="footer-placeholder"></div>
     <!--/.Footer-->
 
     <!-- SCRIPTS -->
@@ -360,10 +253,16 @@
     <script type="text/javascript " src="js/bootstrap.min.js "></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript " src="js/mdb.min.js "></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript " src="js/custom.js "></script>
     <!-- Initializations -->
     <script type="text/javascript ">
         // Animations initialization
         new WOW().init();
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footer.html");
+      });
     </script>
 </body>
 
