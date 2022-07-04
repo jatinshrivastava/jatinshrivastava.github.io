@@ -609,6 +609,10 @@ html {
     transition-delay: 0.1s;
 }
 
+.map {
+   filter: invert(92%) contrast(83%);
+}
+
 .contact-button-submit {
     border-radius: 120px;
 }
