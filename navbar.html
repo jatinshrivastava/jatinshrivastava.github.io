@@ -34,7 +34,7 @@
           <li class="nav-item">
             <a
               class="nav-link nav-elements"
-              id="contect"
+              id="contact"
               href="/contact.html"
               >Contact</a
             >
@@ -82,5 +82,35 @@
       </div>
     </div>
   </nav>
-
   <!-- Navbar -->
+  <script>
+    "use strict";
+    $(document).ready(function () {
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+
+      switch (page) {
+        case "index.html":
+          var navLinkElement = document.getElementById("home");
+          navLinkElement.classList.add("active"); // code block
+          break;
+        case "projects.html":
+          var navLinkElement = document.getElementById("project");
+          navLinkElement.classList.add("active");
+          break;
+        case "contact.html":
+          var navLinkElement = document.getElementById("contact");
+          navLinkElement.classList.add("active");
+          break;
+        case "coming-soon.html":
+          var navLinkElement = document.getElementById("other");
+          navLinkElement.classList.add("active");
+          break;
+        default:
+          var navLinkElement = document.getElementById("home");
+          navLinkElement.classList.add("active");
+          break;
+        // code block
+      }
+    });
+  </script>
