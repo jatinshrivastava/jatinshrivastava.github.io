@@ -623,6 +623,12 @@ html {
     width: 15vw;
 }
 
+@media (max-width: 575.98px) {
+    .contact-me-sm {
+        width: 100vw !important;
+    }
+}
+
 .contact-me:after {
     display: block;
     content: '';
