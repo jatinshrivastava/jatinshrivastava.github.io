@@ -105,6 +105,19 @@
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .bg-text-sm {
+    left: 0px !important;
+    width: 100% !important;
+    text-align: center !important;
+    transform: translate(0%,-50%);
+  }
+
+  .heading-sm {
+    text-align: center !important;
+  }
+}
+
 
     </style>
   </head>
@@ -119,15 +132,15 @@
     <!--Carousel Wrapper-->
 
     <!-- Mask & flexbox options-->
-    <video autoplay muted loop id="myVideo" class="myVideo">
+    <video playsinline autoplay muted loop id="myVideo" class="myVideo">
         <source src="/video/coming_soon_video.mp4" type="video/mp4">
       </video>
       <div class="drop drop1">
     </div>
     <!-- Mask & flexbox options-->
 
-<div class="bg-text">
-  <h1 class="wow fadeIn" data-wow-delay="1s">Coming Soon</h1>
+<div class="bg-text bg-text-sm">
+  <h1 class="wow fadeIn heading-sm" data-wow-delay="1s">Coming Soon</h1>
 </div>
 
     <!--Footer-->
