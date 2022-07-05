@@ -161,6 +161,13 @@ html {
     animation: fill 0.5s ease forwards 2.7s;
 }
 
+@media (max-width: 575.98px) {
+    .hello-sm-svg {
+        width: 80vw;
+    }
+}
+    
+
 #hello path:nth-child(1) {
     stroke-dasharray: 963.64;
     stroke-dashoffset: 963.64;
