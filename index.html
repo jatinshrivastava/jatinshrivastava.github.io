@@ -196,6 +196,22 @@
 
         <!--Section: Main features & Quick Start-->
         <section class="wow fadeIn mb-5">
+          <style>
+            @media (max-width: 575.98px) {
+              .col-mobile-12 {
+                /* width: 85vw; */
+                width: 50vw;
+              }
+
+              .text-sm-center {
+                text-align: center !important;
+              }
+
+              .div-sm-center {
+                margin:0 auto !important;
+              }
+              }
+          </style>
           <!--Grid column-->
           <div class="col-md-12">
             <!-- Main heading -->
@@ -205,11 +221,11 @@
 
             <!-- Main heading -->
             <!-- Languages heading -->
-            <h2 class="skills-heading wow slideInLeft" data-wow-delay="0.5s">
+            <h2 class="skills-heading text-sm-center wow slideInLeft" data-wow-delay="0.5s">
               Languages
             </h2>
             <div
-              class="col-lg-6 d-flex skills-div card wow flipInY"
+              class="col-lg-6 col-mobile-12 d-flex div-sm-center skills-div card wow flipInY"
               data-wow-delay="0.5s"
             >
               <canvas id="barChart"></canvas>
@@ -222,20 +238,20 @@
               Technologies
             </h2>
             <div
-              class="col-lg-6 d-flex mx-auto skills-div card wow flipInY"
+              class="col-lg-6 col-mobile-12 d-flex mx-auto skills-div card wow flipInY"
               data-wow-delay="1s"
             >
               <canvas id="lineChart"></canvas>
             </div>
             <!-- Others heading -->
             <h2
-              class="skills-heading d-flex justify-content-lg-end wow slideInLeft"
+              class="skills-heading text-align: center !important; d-flex justify-content-lg-end wow slideInLeft"
               data-wow-delay="0.25s"
             >
               Professional Skills
             </h2>
             <div
-              class="col-lg-6 d-flex ml-auto skills-div card others-card wow flipInY"
+              class="col-lg-6 col-mobile-12 d-flex div-sm-center ml-auto skills-div card others-card wow flipInY"
               data-wow-delay="0.25s"
             >
               <canvas id="radarChart"></canvas>
