@@ -46,6 +46,30 @@
       .carousel-inner {
         height: 100%;
       }
+
+      @media (max-width: 576px) {
+        .view-mobile {
+          background-image: url('./img/jatin-mobile.jpeg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .view-mobile {
+          background-image: url('./img/jatin-mobile.jpeg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .view-mobile {
+          background-image: url('./img/jatin.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+         }
+      }
     </style>
   </head>
 
@@ -57,12 +81,8 @@
     <!--Carousel Wrapper-->
 
     <div
-      class="view"
-      style="
-        background-image: url('./img/jatin.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
+      class="view view-mobile"
+     
     >
       <!-- Mask & flexbox options-->
       <div
