@@ -675,7 +675,7 @@ html {
 }
 
 .map {
-   filter: invert(92%) contrast(83%);
+   /* filter: invert(92%) contrast(83%); */
 }
 
 .contact-button-submit {
