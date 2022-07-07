@@ -894,9 +894,76 @@ html {
     font-size: 2.6em;
 }
 
-.p1-illuminate {
-    font-weight: 700;
-    font-size: 2.0em;
+@media (max-width: 576px) {
+    .p1-illuminate {
+        font-weight: 700;
+        font-size: 2.0em;
+    }
+
+    .p2-illuminate {
+        font-size: 1.1em;
+        opacity: .3;
+    }
+
+    .project-mask-text-illuminate {
+        font-size: 1.95em !important;
+    }
+
+    .project-mask-text-pronnel {
+        font-size: 2.05em !important;
+    }
+
+    .project-mask-text-giis {
+        font-size: 1.95em !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .p1-illuminate {
+        font-weight: 700;
+        font-size: 2.0em;
+    }
+
+    .p2-illuminate {
+        font-size: 1.3em;
+        opacity: .3;
+    }
+
+    .project-mask-text-illuminate {
+        font-size: 3.2em !important;
+    }
+
+    .project-mask-text-pronnel {
+        font-size: 3.2em !important;
+    }
+
+    .project-mask-text-giis {
+        font-size: 3.2em !important;
+    }
+}
+
+@media (min-width: 993px) {
+    .p1-illuminate {
+        font-weight: 700;
+        font-size: 2.0em;
+    }
+
+    .p2-illuminate {
+        font-size: 1.3em;
+        opacity: .3;
+    }
+
+    .project-mask-text-illuminate {
+        font-size: 3.95em !important;
+    }
+
+    .project-mask-text-pronnel {
+        font-size: 3.95em !important;
+    }
+
+    .project-mask-text-giis {
+        font-size: 3.95em !important;
+    }
 }
 
 .small-hidden-class {
