@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(GIT_INDEX_FILE=\"/Users/jatin/My Stuff/Projects/jatinshrivastava.github.io/.git/worktrees/focused-curie/index\" git add index.html)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
