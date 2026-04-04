@@ -47,7 +47,7 @@
        RESET
     ───────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
       background: var(--bg);
@@ -76,7 +76,9 @@
     /* ─────────────────────────────────────────
        SECTION LAYOUT
     ───────────────────────────────────────── */
-    .section { padding: var(--pad) 24px; }
+    .section {
+      padding: var(--pad) 24px;
+    }
     .container { max-width: var(--mw); margin: 0 auto; }
 
     .section-eyebrow {
