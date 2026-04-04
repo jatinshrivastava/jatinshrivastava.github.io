@@ -47,7 +47,7 @@
        RESET
     ───────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: auto; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
       background: var(--bg);
@@ -2109,10 +2109,61 @@
     function openDrawer()  { drawer.classList.add('open'); scrim.classList.add('open'); document.body.style.overflow='hidden'; hambBtn.setAttribute('aria-expanded','true'); }
     function closeDrawer() { drawer.classList.remove('open'); scrim.classList.remove('open'); document.body.style.overflow=''; hambBtn.setAttribute('aria-expanded','false'); }
 
+    function easeInOutCubic(t) {
+      return t < 0.5
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function smoothScrollTo(targetY) {
+      const startY = window.scrollY;
+      const distance = targetY - startY;
+      const duration = Math.min(1000, Math.max(600, Math.abs(distance) * 0.6));
+      const startTime = performance.now();
+
+      function step(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeInOutCubic(progress);
+
+        window.scrollTo(0, startY + distance * eased);
+
+        if (progress < 1) requestAnimationFrame(step);
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    function scrollToSectionId(sectionId) {
+      const target = document.getElementById(sectionId);
+      if (!target) return;
+
+      const navOffset = document.getElementById('nav').getBoundingClientRect().height + 28;
+      const targetY = Math.max(0, target.getBoundingClientRect().top + window.scrollY - navOffset);
+
+      if (rm) {
+        window.scrollTo(0, targetY);
+      } else {
+        smoothScrollTo(targetY);
+      }
+
+      history.pushState(null, '', '#' + sectionId);
+    }
+
     hambBtn.addEventListener('click', () => drawer.classList.contains('open') ? closeDrawer() : openDrawer());
     drawerClose.addEventListener('click', closeDrawer);
     scrim.addEventListener('click', closeDrawer);
-    document.querySelectorAll('.dl').forEach(l => l.addEventListener('click', closeDrawer));
+
+    document.querySelectorAll('.nav-link, .dl, .nav-brand[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
+
+        event.preventDefault();
+        closeDrawer();
+        scrollToSectionId(href.slice(1));
+      });
+    });
 
     /* Stat counter animation */
     if (!rm) {
