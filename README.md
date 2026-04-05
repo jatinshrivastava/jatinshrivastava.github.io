@@ -1,116 +1,55 @@
-[![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/01/corporate.jpg)](https://mdbootstrap.com/freebies/jquery/portfolio/)
+# Jatin Shrivastava | Portfolio
 
-# Bootstrap 4 & Material Design - Portfolio Template 
+Personal portfolio website for **Jatin Shrivastava**, highlighting mobile engineering experience, featured work, skills, education, awards, and resume/contact details.
 
-Free, responsive Portfolio template containing stunning, full-page Intro and different types of galleries. Built with the newest Bootstrap 4 and Material Design. MIT license – free for personal and commercial use.
+Live site: [jatinshrivastava.github.io](https://jatinshrivastava.github.io)
 
-________
+## What’s in this repo
 
-# Live Previews: 
-## https://mdbootstrap.com/freebies/jquery/portfolio/
+- `index.html` — main portfolio page
+- `resume/index.html` — resume viewer page with a custom tab title
+- `resume/Jatin_Shrivastava_Resume.pdf` — hosted resume PDF
+- `img/` — profile image, project screenshots, favicon, and other image assets
+- `css/`, `js/`, `scss/`, `font/`, `video/` — legacy template assets still kept in the repo
+- `navbar.html`, `footer.html`, `projects.html`, `coming-soon.html`, `gallery-variations.html`, `index-2.html` — older standalone pages/partials retained for reference
 
-# Most important features:
+## Current site sections
 
-1. Fully responsive
+- **About** — bio, portrait, current project chip, and key stats
+- **Experience** — timeline of professional roles
+- **Featured Work** — personal and professional project cards with screenshots
+- **Skills** — grouped technical skills with category hierarchy
+- **Awards** — recognitions and achievements
+- **Education** — academic background
+- **Contact** — LinkedIn, email, and Formspree-backed message form
 
-2. Plenty of useful components
+## Tech stack
 
-3. Easy installation
+- HTML, CSS, and vanilla JavaScript
+- AOS for scroll animations
+- Typed.js for the hero typing effect
+- Formspree for contact form submissions
+- GitHub Pages for hosting
 
-4. Easy to use and customize
+The current homepage is implemented primarily as a single static `index.html` file with inline CSS/JS, so there’s no build step required for normal edits.
 
-5. Active community
+## Run locally
 
-6. Dedicated support forum
+From the repo root, serve the site with any static file server, for example:
 
-7. Detailed documentation
+```bash
+python3 -m http.server 8000
+```
 
-# Demo:  
-**Main demo**: https://mdbootstrap.com/previews/free-templates/portfolio/full-page-gallery.html
+Then open `http://localhost:8000`.
 
-# MDB Quick Start (5 minutes):
-**Written Tutorial**: https://mdbootstrap.com/education/bootstrap/quick-start/
+You can also open `index.html` directly in a browser, but a local server is usually safer for testing asset paths and embedded pages.
 
-**Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
+## Deployment
 
-**npm installation**
-You can install MDBootstrap using NPM:
-- `npm install mdbootstrap`
+This repository is configured as a GitHub Pages site. Changes merged into `master` are published to the live portfolio site.
 
-# Additional tutorials:
+## Notes
 
-**MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
-
-**MDB - Wordpress tutorial**: https://mdbootstrap.com/education/wordpress/
-
-# Documentation:
-
-**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
-
-# PRO version:
-
-**MDB Portfolio Template Pro (jQuery version)**: https://mdbootstrap.com/products/jquery-portfolio/
-
-# Highlights:  
-**Bootstrap 4**  
-Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.
-
-**Material Design for Bootstrap**  
-This template is built with MDBootstrap - powerful and free UI Kit, containing 400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.  
-
-**Free for personal and commercial use**  
-Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.   
-
-**10 fresh ready to use templates**  
-We are going further and giving to you ready to use templates! Use them as you like, as an inspiration, prototype or final product for your customers.  
-
-**Fully responsive**  
-It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB looks great on each screen.
-
-**Technical support**  
-We really care about reliability. If you have any questions - do not hesitate to contact us.  
-
-**Active community**  
-Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
-
-**Flex box**  
-MDB fully suppports Flex Box. You can forget about alignment issues.  
-
-**Latest jQuery**  
-MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
-
-**Detailed documentation:**  
-We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
-
-A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
-
-# Useful Links:  
-
-Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/  
-
-5 min quick start: https://mdbootstrap.com/education/bootstrap/quick-start/  
-
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/education/bootstrap/  
-
-Material Design + WordPress Tutorial: https://mdbootstrap.com/education/wordpress/  
-
-Other Freebies: https://mdbootstrap.com/freebies/  
-
-Premium Templates: https://mdbootstrap.com/templates/  
-
-
-# Social Media:  
-
-Twitter: https://twitter.com/MDBootstrap  
-
-Facebook: https://www.facebook.com/mdbootstrap  
-
-Pinterest: https://pl.pinterest.com/mdbootstrap 
-
-Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
-
-Dribbble: https://dribbble.com/mdbootstrap
-
-LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
-
-# Visit our website: https://mdbootstrap.com/
+- The site’s current UI is in `index.html`; several older template files are intentionally retained but are not the primary production experience.
+- `.claude/` and `.DS_Store` are ignored via `.gitignore`.
