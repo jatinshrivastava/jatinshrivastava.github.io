@@ -1000,7 +1000,7 @@
     /* ─────────────────────────────────────────
        AWARDS
     ───────────────────────────────────────── */
-    .awards-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+    .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px; }
 
     .award-card {
       padding: 28px;
@@ -1544,7 +1544,8 @@
                 <li>Developed features following MVVM + Repository + Coordinator architecture across a large-scale enterprise iOS codebase</li>
                 <li>Contributed to UI test coverage using Robot pattern (XCTest), adding 80+ test commits; resolved iOS 18 keyboard regression and Core Data merge crashes</li>
                 <li>Maintained GitLab CI/CD pipeline with Fastlane; delivered 407 commits with 20% testing commit ratio</li>
-                <li>Mentored 5 interns through CRM app delivery; captained team to Most Innovative Project award + individual MVP at codeathon</li>
+                <li>Directly oversaw 4 iOS interns with cross-team support to a cohort of 8 software development interns through end-to-end CRM app delivery (summer 2025)</li>
+                <li>Captained team Androidus MaximiOS to Best Performance award + individual MVP at 2025 codeathon; member of team Brotherhood of Mobile — Most Innovative + Runners Up at 2024 codeathon</li>
               </ul>
             </div>
 
@@ -1582,7 +1583,7 @@
                 </div>
               </div>
               <ul class="tl-bullets">
-                <li>Shipped 5 production iOS and Android apps in healthtech, proptech, and B2B SaaS — collectively reaching ~1.6M downloads</li>
+                <li>Shipped 5 production iOS and Android apps in healthtech, proptech, and B2B SaaS — collectively reaching over 1M downloads</li>
                 <li>Built core Illuminate Health features: medication management, real-time WebSocket chat, APNS/FCM push, AWS Cognito/S3/Lambda</li>
                 <li>Resolved critical RealmSwift threading crash (RLMException) in production — traced and fixed using write transactions</li>
                 <li>Architected VoIP calling: PushKit → CallKit → Flutter Method Channel → Jitsi Meet SDK across iOS and Flutter</li>
@@ -1641,7 +1642,7 @@
               <div class="proj-name">DailyRobe</div>
               <div class="proj-tagline">AI-Powered Wardrobe iOS App</div>
               <div class="proj-badge badge-amber"><span class="badge-dot"></span>Publishing Soon</div>
-              <p class="proj-desc">An on-device ML pipeline using CoreML and Vision framework — DeepLabV3 semantic segmentation for clothing background removal and FastViT Vision Transformer for feature extraction. Custom computer vision algorithms for color detection (radial center-weighted HSL sampling) and pattern classification (variance + edge transition analysis). Multi-tier ML fallback system ensuring 100% processing success rate.</p>
+              <p class="proj-desc">An on-device ML pipeline using CoreML and Vision framework — DeepLabV3 semantic segmentation for clothing background removal and FastViT Vision Transformer for feature extraction. Custom computer vision algorithms for color detection (radial center-weighted HSL sampling) and pattern classification (variance + edge transition analysis). NSCache LRU with 50MB memory budget for processed garment assets. FNV-1a hash for deterministic outfit generation. Multi-tier ML fallback system ensuring 100% processing success rate.</p>
               <div class="proj-tags">
                 <span class="tag">Swift</span>
                 <span class="tag">SwiftUI</span>
@@ -1656,7 +1657,7 @@
               </div>
             </div>
             <div class="proj-stats">
-              <div class="proj-stat"><span class="proj-stat-icon">📝</span><span class="proj-stat-text"><strong>~2,600 lines</strong> of Swift</span></div>
+              <div class="proj-stat"><span class="proj-stat-icon">📝</span><span class="proj-stat-text"><strong>~2,600 lines</strong> of Swift (35k+ insertions)</span></div>
               <div class="proj-stat"><span class="proj-stat-icon">📱</span><span class="proj-stat-text"><strong>17+</strong> SwiftUI Views</span></div>
               <div class="proj-stat"><span class="proj-stat-icon">🔒</span><span class="proj-stat-text"><strong>Zero</strong> third-party dependencies</span></div>
               <div class="proj-stat"><span class="proj-stat-icon">🧠</span><span class="proj-stat-text">Fully <strong>on-device</strong> ML inference</span></div>
@@ -1850,6 +1851,7 @@
           <div class="sk-tags">
             <span class="sk-tag sk-tag-core">CoreML</span><span class="sk-tag sk-tag-core">Vision Framework</span>
             <span class="sk-tag">DeepLabV3</span><span class="sk-tag">FastViT</span>
+            <span class="sk-tag">AI-Assisted Development</span><span class="sk-tag">Prompt Engineering</span>
           </div>
         </div>
 
@@ -1877,7 +1879,7 @@
           <div class="sk-tags">
             <span class="sk-tag">XCTest</span><span class="sk-tag">Unit Testing</span>
             <span class="sk-tag">UI Testing</span><span class="sk-tag">Robot Pattern</span>
-            <span class="sk-tag">Mock Injection</span>
+            <span class="sk-tag">Mock Injection</span><span class="sk-tag">Leak Testing</span>
           </div>
         </div>
 
@@ -1888,6 +1890,7 @@
             <span class="sk-tag">GitLab CI/CD</span><span class="sk-tag">SwiftLint</span>
             <span class="sk-tag">Firebase</span><span class="sk-tag">AWS S3</span>
             <span class="sk-tag">AWS Cognito</span><span class="sk-tag">AWS Lambda</span>
+            <span class="sk-tag">REST APIs</span>
           </div>
         </div>
 
@@ -1915,17 +1918,23 @@
         </div>
         <div class="award-card glass" data-aos="flip-right" data-aos-delay="100">
           <span class="award-icon">🥇</span>
-          <div class="award-name">Most Innovative Project</div>
-          <div class="award-event">Paycom Codeathon · Team</div>
+          <div class="award-name">Best Performance</div>
+          <div class="award-event">Paycom Codeathon · Androidus MaximiOS</div>
           <span class="award-year">2025</span>
         </div>
         <div class="award-card glass" data-aos="flip-left"  data-aos-delay="200">
-          <span class="award-icon">🥈</span>
-          <div class="award-name">2nd Place</div>
-          <div class="award-event">Paycom Codeathon · Team</div>
+          <span class="award-icon">💡</span>
+          <div class="award-name">Most Innovative Project</div>
+          <div class="award-event">Paycom Codeathon · Brotherhood of Mobile</div>
           <span class="award-year">2024</span>
         </div>
         <div class="award-card glass" data-aos="flip-right" data-aos-delay="300">
+          <span class="award-icon">🥈</span>
+          <div class="award-name">Runners Up</div>
+          <div class="award-event">Paycom Codeathon · Brotherhood of Mobile</div>
+          <span class="award-year">2024</span>
+        </div>
+        <div class="award-card glass" data-aos="flip-left"  data-aos-delay="400">
           <span class="award-icon">⭐</span>
           <div class="award-name">Outstanding Performance</div>
           <div class="award-event">Athmin Technologies</div>
@@ -1963,7 +1972,7 @@
         <div class="edu-card glass" data-aos="fade-up" data-aos-delay="100">
           <span class="edu-chip">B.Tech</span>
           <div class="edu-inst">Dr. A.P.J. Abdul Kalam Technical University</div>
-          <div class="edu-degree">Bachelor of Technology in Computer Science</div>
+          <div class="edu-degree">Bachelor of Technology in Computer Science &amp; Engineering</div>
           <span class="edu-dates">Jul 2016 – May 2020</span>
           <div class="edu-focus-lbl">Focus Areas</div>
           <div class="sk-tags">
